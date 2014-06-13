@@ -1,0 +1,107 @@
+<!doctype html>
+<?php
+
+	session_start();
+
+?>
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Unos Pacijenta</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header class="headerWrapper">
+
+	<div class="container">
+
+		<img src="img/logo.png" alt="">
+
+		<div class="logoutButton">
+			<?php
+
+			 	//$username = $_GET['username'];
+			 	//$password = $_GET['password'];
+			 	// U slučaju krivog logina preusmjeravanje na login.html
+				/*
+			 	if($_SESSION["username"] != 'Danijel' && $_SESSION["password"] != 'lozinka')
+			 	{
+					header('Location: login.html');
+				}
+				*/
+
+				if (!isset($_SESSION["username"]) || (empty($_SESSION["username"]))) {
+					header('Location: login.html');
+				}
+				
+				echo "Dobrodosao " .$_SESSION["username"];
+				
+			?>
+
+			<form action="ubijSession.php" method="post">
+				<input type="submit" value="Logout" />
+			</form>
+
+		</div>
+
+	</div>
+
+	</header>
+
+
+<div class="wrapperLogin">	
+	
+	<div class="meniWrapper">
+	<h3>Meni</h3>
+		<nav class="">
+			<ul>
+				<li><a href="osobniPodaci.php">Osobni Podaci</a></li>
+				<li><a href="popisPacijenata.php">Popis Pacijenata</a></li>
+	 			<li><a href="unosPacijenta.php">Unos Pacijenta</a></li>
+	 			<li><a href="json.php">Doktori</a></li>
+	 			<li><a href="#">Generiraj pdf</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="sadrzajWrapper">
+	
+		<section class="logoWrapper">
+			<img src="img/logo.png" alt="">
+			<h3>Pronađite pacijente..</h3>
+		</section>
+	
+	<section class="formaWrapper">
+		
+		<form action="generirajPDF.php" method="POST">
+			
+			<label for="username">Ime: </label>
+			<input type="text" name="ime">
+
+			<label for="password">Prezime:</label>
+			<input type="password" name="prezime">
+			<br>
+			<input type="submit" name="login" value="Filter" style="width:100px;">
+
+		</form>
+
+	</section>
+
+
+		
+
+	</div>
+
+</div>
+
+<footer class="footerWrapper">
+		<p>CopyRight ZDK.2014</p>
+</footer>
+
+	
+</body>
+</html>

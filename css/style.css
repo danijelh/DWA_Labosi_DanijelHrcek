@@ -1,0 +1,420 @@
+/* ----------------------------
+
+Boje:
+	#BC1F2A - Crvena
+	#7A0A12 - Tamnija crvena 122,101,18
+	#PE535D - Ružičasta ?
+
+---------------------------------- */
+
+body{
+	margin: 0;
+}
+
+
+input{
+	width: 100%;
+	padding: 7px;
+	margin-bottom: 20px;
+}
+
+h1,h2,h3{
+	text-align: center;
+}
+
+.headerWrapper{
+	color: white;
+	background-color: #7A0A12;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+.headerWrapper img{
+	width: 130px;
+}
+
+.header{
+	background-color: #7A0A12;
+	height: 100px;
+}
+
+.wrapper{
+	overflow: auto;
+	width: 50%;
+	margin: 3em auto;
+	clear: both;
+}
+
+.container{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.buttonPovratak{
+	text-decoration: none;
+	color: rgba(190,25,25,1.0);
+	background-color: rgba(32,32,32,1.0);
+	padding: 12px 30px;
+	border-radius: 3px;
+}
+
+.button{
+	text-decoration: none;
+	color: white;
+	background-color: rgba(190,25,25,1.0);
+	padding: 0.7em 2em;
+	margin: 5px 20px;
+	border-radius: 3px;
+	border:0;
+	outline: 0;
+
+
+	-webkit-transition: all 250ms;
+  	-moz-transition: all 250ms;
+  	-o-transition: all 250ms;
+  	-ms-transition: all 250ms;
+  	transition: all 250ms;
+}
+
+
+.button:hover{
+	background-color: rgba(190,25,25,1.0);
+
+	background-color: rgba(32,32,32,1.0);
+
+
+ 	-moz-box-shadow: 0 0 15px rgba(0,0,0,1.0);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,1.0);
+	box-shadow: 0 0 15px rgba(0,0,0,1.0);
+}
+
+/* ---------------------------
+
+	Login.html
+
+---------------------------- */
+
+
+.logoWrapper{
+	width: 60%;
+	float:left;
+}
+
+.logoWrapper img{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: auto;
+}
+
+.formaWrapper{
+	width: 35%;
+	float: left;
+}
+
+.footerWrapper{
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	height: 100px;
+	clear: both;
+	margin: 0px 0px !important;
+	background-color: #7A0A12;
+}
+
+/* ---------------------------
+
+	osobniPodaci.php
+
+---------------------------- */
+
+.podaciWrapper{
+	padding: 30px 40px;
+}
+
+.podaciWrapper h2{
+	text-align: left;
+}
+
+.informationsLink{
+	text-decoration: none;
+	color: white;
+	background-color: #7A0A12;
+	padding: 15px 30px;
+	margin: 20px 0px;
+}
+
+#personalInformation{
+	display: none;
+	margin: 20px 0px;
+}
+
+#educationInformation{
+	display: none;
+	margin: 20px 0px;
+}
+
+#skillsInformation{
+	display: none;
+	margin: 20px 0px;
+}
+
+/* ---------------------------
+
+	popisPacijenata.php
+
+---------------------------- */
+
+.wrapperLogin{
+	clear: both;
+	overflow: auto;
+	width: 70%;
+	margin: 30px auto;
+}
+
+
+.logoutButton{
+	float: right;
+	margin-top: 0px;
+}
+
+.meniWrapper{
+	margin: 5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	border:1px solid black;
+	border-radius: 5px;
+	float: left;
+	width: 25%;
+}
+
+.sadrzajWrapper{
+	width: 72%;
+	float: left;
+	margin: 5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	border:1px solid black;
+	border-radius: 5px;
+}
+
+/* Stiliziranje navigacije */
+
+.meniWrapper li{
+	font-size: 1.2em;
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.meniWrapper li a{
+	text-decoration: none;
+	color: rgba(122,10,18,1.0);
+	/* background-color: rgba(122,10,18,1.0); */
+	width: 100%;
+}
+
+.meniWrapper li a:hover{
+
+	color: rgba(255,10,18,1.0);
+
+}
+
+/* Stiliziranje tablice */
+
+.popisPacijenataTable{
+	padding: 15px;
+	width: 100%;
+}
+
+.popisPacijenataTable tr{
+	transition: 100ms all;
+}
+
+.popisPacijenataTable tr:hover{
+	background-color: rgba(0,0,0,1.0);
+	color: white;
+}
+
+.popisPacijenataTable td{
+	padding: 10px 5px;
+	margin: 0;
+}
+
+.tableSearch{
+	width: 200px;
+	margin: 5px 20px;
+	padding: 7px 10px;
+}
+
+/* ---------------------------
+
+	unosPacijenta.php
+
+---------------------------- */
+
+
+.unosPacijentaForm{
+	padding: 20px;
+}
+
+.unosPacijentaForm input{
+	width: 40%;
+}
+
+#spol{
+	width: 5%;
+}
+
+#bolest{
+	width: 5%;
+}
+
+
+/* ---------------------------
+
+	popisUnesenihPacijenata.php
+
+---------------------------- */
+
+
+
+.popisUnesenihWrapper{
+	width: 95%;
+}
+
+.popisUnesenihWrapper table{
+	width: 100%;
+	margin: 20px 15px;
+	text-align: center;
+	border: 1px solid rgba(52,52,52,0.6);
+}
+
+.popisUnesenihWrapper th{
+	padding:10px;
+	color:rgba(230,20,0,1.0) !important;
+	background-color:rgba(32,32,32,1.0);
+}
+
+.popisUnesenihWrapper td{
+	padding:10px;
+	background-color:rgba(32,32,32,1.0);
+	border-radius:2px;
+	color: white;
+}
+
+/* ---------------------------
+
+	json.php
+
+---------------------------- */
+
+
+.formDoktori input{
+	width: 30%;
+	margin: 10px 5px 20px 20px;
+
+}
+
+.jsonButtonSubmit{
+	width: 25% !important;
+}
+
+/* ---------------------------
+
+	ispisDoktora.php
+
+---------------------------- */
+
+
+.sadrzajIspisDoktoraWrapper{
+	width: 70%;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.sadrzajIspisDoktoraWrapper table{
+	text-align:center;
+	margin-top:20px;
+	border-radius: 5px;
+	color: white;
+	background-color:rgba(50,50,50,1.0);
+	border-radius:2px;
+}
+
+.sadrzajIspisDoktoraWrapper th{
+	padding:10px;
+	color:rgba(230,20,0,1.0) !important;
+}
+
+.sadrzajIspisDoktoraWrapper td{
+	padding:10px;
+	background-color:rgba(32,32,32,1.0);
+	border-radius:2px;
+}
+
+
+
+/* ---------------------------
+
+	jsonJavascript.php
+
+---------------------------- */
+
+
+.jsonIspisWrapper{
+	margin: 40px 20px;
+}
+
+.jsonIspisWrapper table{
+	text-align:center;
+	margin-top:20px;
+	border-radius: 5px;
+	color: white;
+	background-color:rgba(50,50,50,1.0);
+	border-radius:2px;
+}
+
+.tableIspisUnesenihPacijenata td{
+	width: 200px;
+	padding:2px 10px;
+	background-color:rgba(32,32,32,1.0);
+	border-radius:2px;
+
+}
+
+.tableIspisUnesenihPacijenata{
+
+}
+
+.jsonIspisWrapper input{
+	margin:5px 0px !important;
+	outline: 0;
+	border:0;
+	background-color: rgba(190,25,0,1.0);
+	color: white;
+
+	background-color: rgba(190,25,25,1.0);
+	border-radius: 3px;
+
+
+	-webkit-transition: all 250ms;
+  	-moz-transition: all 250ms;
+  	-o-transition: all 250ms;
+  	-ms-transition: all 250ms;
+  	transition: all 250ms;
+}
+
+.jsonIspisWrapper input:hover{
+	background-color: rgba(190,25,25,1.0);
+
+	background-color: rgba(32,32,32,1.0);
+
+
+ 	-moz-box-shadow: 0 0 15px rgba(0,0,0,1.0);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,1.0);
+	box-shadow: 0 0 15px rgba(0,0,0,1.0);
+}
+
+
